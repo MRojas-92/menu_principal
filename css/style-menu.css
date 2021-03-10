@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    box-sizing: border-box; 
+    margin:0;
+    padding:0;
+}
+
+/* TEXTO EN GENERAL */
+body {
+    font-family: 'Open Sans', sans-serif; /* Fuente de letra */
+}
+
+/* AJUSTES DEL HEADER */
+.contenedor { 
+    margin: 1px;
+    background-image: url(/img/encabezado.jpg);
+    height: 200px;
+}
+
+.contenido {
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+}
+
+.contenido h1 {
+    padding: 3px;
+    font-size: 36px;
+}
+
+.contenido h2 {
+    padding-top: 15px;
+
+}
+
+/* OPCIONES DE NAVEGACION */
+.opciones {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #b2babb;
+    position: absolute;
+    height: min-content;
+    overflow: auto;
+}
+
+.opciones a{ /* Define la caja que contiene los botones/opciones */
+    text-decoration:none;
+    display:inline-block;
+    padding:7px 10px;
+    width:250px;
+    height:40px;
+    color:#000;
+    font-weight: bold;
+
+}
+
+
+
+@media (min-width: 768px) {.opciones {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 380px;
+        background-color: #b2babb;
+        position: absolute;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .opciones a{ /* Define la caja que contiene los botones/opciones */
+        text-decoration:none;
+        display:inline-block;
+        padding:7px 10px;
+        width:250px;
+        height:40px;
+        color:#000;
+        font-weight: bold;
+    }
+}
+
+div img {
+    max-width: 100%;
+    display: block;
+    justify-content: left;
+}
+
+/*
+.sub-opciones {
+    list-style-type: none;
+}
+*/
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+*/
+                  
+li{ /* Ubica el submenu a la altura de la opcion */
+    list-style-type:none;
+    position:relative;
+    width:120px;
+} /*
+                
+*/        
+li a:hover{ /* Efecto de brillo cuando pasa el cursor sobre el boton */ 
+    background-color: #555;
+    color: white;
+}
+    
+    
+
+    nav li ul{ /* despliega el submenu al lado derecho */
+        display: inline-block;
+        position:absolute;
+        top:0px;
+        left:120px;
+        list-style: none;
+    }
+            
+    nav li:hover ul{display:block;}  *//* Dispone el submenu  */
+
+/* PIE DE PAGINA */
+
+.contenedor-f {
+    width: 95%;
+    max-width: 1200px; /* 1200px = 120rem */
+    margin: 0 auto;
+}
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+.contenedor-footer {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-footer p {
+    text-align: center;
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}
