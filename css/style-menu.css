@@ -14,7 +14,7 @@ body {
 /* AJUSTES DEL HEADER */
 .contenedor { 
     margin: 1px;
-    background-image: url(../img/encabezado.jpg);
+    background-image: url(menu_principal/img/encabezado.jpg);
     height: 200px;
 }
 
